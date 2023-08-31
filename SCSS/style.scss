@@ -2,6 +2,9 @@
 @import "colores";
 *{padding: 0;
 margin: 0;}
+.div-imagen{
+    
+}
 #title-sitio{
     text-align: center;
     color: $color-title;
@@ -103,7 +106,7 @@ margin: 0;}
         // section entrenamiento//
         .carousel-item img {
             width: 400px; 
-            height: 200px;
+            height: 300px;
             object-fit: cover;
             }
             
@@ -131,3 +134,113 @@ p{
         padding-top: 20px;
     }
 }
+    // Terapias//
+
+#title__Terpias{
+    background-color: $color-entrada;
+    height: 100px;
+    h1{
+        font-size: 35px;
+    }
+    @extend#title__entrenamiento;
+}
+.texto-entrada{
+    @extend.texto-entrada;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: $color-div;
+}
+.Masajes-t1{
+    text-align: start;
+    padding-left: 10px;
+    font-family:$sup-titulos;
+    font-size: 25px;
+    color:$color-suptitle;
+}
+#Masajes-t2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    ol{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            padding-right: 20px;
+            padding-bottom: 20px; 
+        }
+    }
+    h4{
+        color:$color-suptitle;
+        padding-left: 10px;
+    }
+    p{
+        width: auto;
+        background-color: $color-div;
+        color:$color-p;
+        text-align: start;
+    }
+    h6{
+        color:$color-h6;
+    }
+}
+#masajes_anti{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    p{
+        background-color: $color-div;
+        color: $color-p;
+        text-align: start;
+    }
+}
+.masaje-anti{
+    text-align: start;
+    padding-left: 10px;
+    font-family:$sup-titulos;
+    font-size: 25px;
+    color:$color-suptitle;
+}
+.reductivo-h3{
+@extend.masaje-anti;
+}
+#reductivo1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items:center;
+
+}
+.reductivo1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#reductivo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 5px;
+    p{
+        background-color: $color-div;
+        text-align: start;
+        color: $color-p;
+    }
+}
+.div-imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+
