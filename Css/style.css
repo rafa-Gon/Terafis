@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#title-sitio {
+  text-align: center;
+  color: #ffc300;
+}
+#title-sitio .div-vista__mobil {
+  width: 250px;
+}
+#title-sitio h1 {
+  padding-bottom: 60px;
+  font-family: "Merriweather", serif;
+}
+#title-sitio {
+  background-color: #1a759f;
+}
+
+.texto-entrada {
+  font-family: arial;
+  font-size: 17px;
+  text-align: center;
+}
+.texto-entrada h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  color: #003049;
+}
+
+#readaptacion, #Terapeuticos {
+  padding: 10px;
+  background-color: #a9d6e5;
+}
+#readaptacion h3, #Terapeuticos h3 {
+  font-family: "Roboto Slab", serif;
+  color: #003049;
+}
+#readaptacion .readaptacion, #Terapeuticos .readaptacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#readaptacion p, #Terapeuticos p {
+  font-family: arial;
+  font-size: 17px;
+  text-align: start;
+}
+
+#Acondicionamiento, #anti-estres {
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  color: #003049;
+}
+#Acondicionamiento .acondicionamiento, #anti-estres .acondicionamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Acondicionamiento p, #anti-estres p {
+  font-family: arial;
+  font-size: 17px;
+  text-align: start;
+}
+
+#Terapeuticos .terapeutico {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#Terapeuticos p {
+  font-family: arial;
+  font-size: 17px;
+  text-align: center;
+}
+
+#anti-estres .anti-estr {
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+  color: #003049;
+}
+#anti-estres p {
+  font-family: arial;
+  font-size: 17px;
+  text-align: center;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  background-color: #1a759f;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#title__entrenamiento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title__entrenamiento h1 {
+  font-family: "Merriweather", serif;
+  color: #ffc300;
+}
+
+p {
+  text-align: center;
+  font-size: 17px;
+  font-family: arial;
+}
+
+#readaptacion h2, #Terapeuticos h2 {
+  padding-top: 20px;
+}
+#readaptacion iframe, #Terapeuticos iframe {
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

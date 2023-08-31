@@ -1,0 +1,136 @@
+@import "fonts";
+@import "colores";
+*{padding: 0;
+margin: 0;}
+#title-sitio{
+    text-align: center;
+    color: $color-title;
+    .div-vista__mobil{
+        width: 250px;
+    }
+    h1{
+        padding-bottom: 60px;
+        font-family: $font-h1;
+    }
+    &{
+        background-color: $color-entrada;
+    }
+}
+.texto-entrada{
+    font-family: $estilo-p;
+    font-size: $font-parrafo;
+    text-align: center;
+    h2{
+        font-family:$sup-titulos;
+        font-size: 25px;
+        color:$color-suptitle ;
+    }
+}
+#readaptacion{
+    padding: 10px;
+    background-color:$color-div;
+    h3{
+        font-family:$sup-titulos;
+        color:$color-suptitle;
+    }
+    .readaptacion{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    p{
+        font-family: $estilo-p;
+        font-size: $font-parrafo;
+        text-align:start;
+    }
+}
+#Acondicionamiento{
+    padding: 10px;
+    font-family:$sup-titulos;
+    font-size: 25px;
+    color:$color-suptitle;
+    .acondicionamiento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    p{
+        font-family: $estilo-p;
+        font-size: $font-parrafo;
+        text-align:start;
+    }
+}
+#Terapeuticos{
+    @extend#readaptacion;
+    .terapeutico{
+    font-family:$sup-titulos;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    p{
+        font-family: $estilo-p;
+        font-size: $font-parrafo;
+        text-align: center; 
+    }
+}
+#anti-estres{
+    @extend#Acondicionamiento;
+    .anti-estr{
+    font-family:$sup-titulos;
+    font-size: 25px;
+    color:$color-suptitle;
+    }
+    p{
+        font-family: $estilo-p;
+        font-size: $font-parrafo;
+        text-align: center;  
+    }
+}
+#footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    background-color:$color-entrada;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+        // section entrenamiento//
+        .carousel-item img {
+            width: 400px; 
+            height: 200px;
+            object-fit: cover;
+            }
+            
+#title__entrenamiento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    h1{
+
+        font-family:$font-h1;
+        color: $color-title;
+    }
+}
+p{
+        text-align: center;
+        font-size: $font-parrafo;
+        font-family:$estilo-p;
+    }
+#readaptacion{
+    h2{
+        padding-top: 20px;
+    }
+    iframe{
+        padding-top: 20px;
+    }
+}
+#acondicionamiento__2{
+
+}
