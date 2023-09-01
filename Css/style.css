@@ -1,6 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  color: #073b4c;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #cae9ff;
 }
 
 #title-sitio {
@@ -10,7 +18,8 @@
 #title-sitio .div-vista__mobil {
   width: 250px;
 }
-#title-sitio h1 {
+#title-sitio .title-sitio h1 {
+  color: #ffc300;
   padding-bottom: 60px;
   font-family: "Merriweather", serif;
 }
@@ -18,9 +27,15 @@
   background-color: #1a759f;
 }
 
-.texto-entrada {
+.texto-entrada1, .texto-entrada {
+  background-color: #a9d6e5;
   font-family: arial;
   font-size: 17px;
+  text-align: justify;
+  padding: 0%;
+}
+
+.texto-entrada {
   text-align: center;
 }
 .texto-entrada h2 {
@@ -29,24 +44,25 @@
   color: #003049;
 }
 
-#readaptacion, #Terapeuticos {
-  padding: 10px;
-  background-color: #a9d6e5;
+.ofrecemos {
+  padding: 20px 5px;
+  font-family: "Merriweather", serif;
 }
-#readaptacion h3, #Terapeuticos h3 {
+
+#readaptacion, #readaptacion2, #Terapeuticos {
+  padding: 5px;
+  background-color: #a9d6e5 !important;
+}
+#readaptacion h3, #readaptacion2 h3, #Terapeuticos h3 {
+  padding: 20px 10px;
   font-family: "Roboto Slab", serif;
   color: #003049;
 }
-#readaptacion .readaptacion, #Terapeuticos .readaptacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#readaptacion p, #Terapeuticos p {
+#readaptacion p, #readaptacion2 p, #Terapeuticos p {
+  padding: 20px 0px;
   font-family: arial;
   font-size: 17px;
-  text-align: start;
+  text-align: justify;
 }
 
 #Acondicionamiento, #anti-estres {
@@ -61,10 +77,14 @@
   justify-content: center;
   align-items: center;
 }
+#Acondicionamiento h2, #anti-estres h2 {
+  padding: 20px 0px;
+}
 #Acondicionamiento p, #anti-estres p {
+  padding: 20px 0px;
   font-family: arial;
   font-size: 17px;
-  text-align: start;
+  text-align: justify;
 }
 
 #Terapeuticos .terapeutico {
@@ -76,9 +96,10 @@
   align-items: center;
 }
 #Terapeuticos p {
+  padding: 20px 0px;
   font-family: arial;
   font-size: 17px;
-  text-align: center;
+  text-align: justify;
 }
 
 #anti-estres .anti-estr {
@@ -87,9 +108,10 @@
   color: #003049;
 }
 #anti-estres p {
+  padding: 20px 0px;
   font-family: arial;
   font-size: 17px;
-  text-align: center;
+  text-align: justify;
 }
 
 #footer {
@@ -101,34 +123,55 @@
   padding-top: 5px;
 }
 
-.carousel-item img {
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-}
-
 #title__entrenamiento, #title__Terpias {
+  background-color: #1a759f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 #title__entrenamiento h1, #title__Terpias h1 {
   font-family: "Merriweather", serif;
   color: #ffc300;
 }
 
-p {
-  text-align: center;
-  font-size: 17px;
-  font-family: arial;
+.carousel-item img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
 }
 
-#readaptacion h2, #Terapeuticos h2 {
-  padding-top: 20px;
+.text-start {
+  background-color: #a9d6e5;
 }
-#readaptacion iframe, #Terapeuticos iframe {
-  padding-top: 20px;
+.text-start p {
+  text-align: justify;
+}
+
+#readaptacion2 {
+  margin: 0%;
+  background: none !important;
+}
+#readaptacion2 h2 {
+  padding: 20px 0px;
+}
+#readaptacion2 p {
+  text-align: justify;
+}
+
+.div-multi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a9d6e5;
+}
+.div-multi div {
+  padding: 10px;
+}
+.div-multi p {
+  text-justify: start;
 }
 
 #title__Terpias {
@@ -140,8 +183,10 @@ p {
 }
 
 .texto-entrada {
-  margin-top: 20px;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   background-color: #a9d6e5;
 }
 
@@ -151,13 +196,13 @@ p {
   font-family: "Roboto Slab", serif;
   font-size: 25px;
   color: #003049;
+  margin: 50px 50px;
 }
 
 #Masajes-t2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px;
 }
 #Masajes-t2 ol {
   list-style-type: none;
@@ -165,12 +210,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#Masajes-t2 ol img {
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 0%;
+  width: 100%;
 }
 #Masajes-t2 h4 {
+  text-align: start;
   color: #003049;
   padding-left: 10px;
 }
@@ -178,9 +222,10 @@ p {
   width: auto;
   background-color: #a9d6e5;
   color: #073b4c;
-  text-align: start;
+  text-align: justify;
 }
 #Masajes-t2 h6 {
+  margin: 20px 10px;
   color: #ef476f;
 }
 
@@ -189,7 +234,6 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5px;
 }
 #masajes_anti p {
   background-color: #a9d6e5;
@@ -198,10 +242,10 @@ p {
 }
 
 .masaje-anti, .reductivo-h3 {
-  text-align: start;
-  padding-left: 10px;
+  text-align: center;
+  padding-bottom: 20px;
   font-family: "Roboto Slab", serif;
-  font-size: 25px;
+  font-size: 35px;
   color: #003049;
 }
 
@@ -212,18 +256,11 @@ p {
   align-items: center;
 }
 
-.reductivo1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #reductivo2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
 }
 #reductivo2 p {
   background-color: #a9d6e5;

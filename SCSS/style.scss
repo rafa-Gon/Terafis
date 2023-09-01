@@ -1,14 +1,24 @@
 @import "fonts";
 @import "colores";
+
 *{padding: 0;
-margin: 0;}
+margin: 0;
+color:$color-p;
+}
+.sticky-navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+        background-color:#cae9ff;
+}
 #title-sitio{
     text-align: center;
     color: $color-title;
     .div-vista__mobil{
         width: 250px;
     }
-    h1{
+    .title-sitio h1{
+        color: $color-title;
         padding-bottom: 60px;
         font-family: $font-h1;
     }
@@ -16,9 +26,15 @@ margin: 0;}
         background-color: $color-entrada;
     }
 }
-.texto-entrada{
+.texto-entrada1{
+    background-color:$color-div;
     font-family: $estilo-p;
     font-size: $font-parrafo;
+    text-align:justify;
+    padding: 0%;
+}
+.texto-entrada{
+    @extend.texto-entrada1;
     text-align: center;
     h2{
         font-family:$sup-titulos;
@@ -26,24 +42,23 @@ margin: 0;}
         color:$color-suptitle ;
     }
 }
+.ofrecemos{
+    padding: 20px 5px;
+    font-family:$font-h1;
+}
 #readaptacion{
-    padding: 10px;
-    background-color:$color-div;
+    padding: 5px;
+    background-color:$color-div !important;
     h3{
+        padding: 20px 10px;
         font-family:$sup-titulos;
         color:$color-suptitle;
     }
-    .readaptacion{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
     p{
+        padding: 20px 0px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
-        text-align:start;
+        text-align:justify;
     }
 }
 #Acondicionamiento{
@@ -57,10 +72,14 @@ margin: 0;}
         justify-content: center;
         align-items: center;
     } 
+    h2{
+        padding:20px 0px;
+    }
     p{
+        padding: 20px 0px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
-        text-align:start;
+        text-align: justify;
     }
 }
 #Terapeuticos{
@@ -74,9 +93,10 @@ margin: 0;}
     align-items: center;
     }
     p{
+        padding:20px 0px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
-        text-align: center; 
+        text-align:justify; 
     }
 }
 #anti-estres{
@@ -87,9 +107,10 @@ margin: 0;}
     color:$color-suptitle;
     }
     p{
+        padding: 20px 0px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
-        text-align: center;  
+        text-align:justify;  
     }
 }
 #footer{
@@ -101,36 +122,56 @@ margin: 0;}
     padding-top: 5px;
 }
         // section entrenamiento//
-        .carousel-item img {
-            width: 400px; 
-            height: 300px;
-            object-fit: cover;
-            }
-            
 #title__entrenamiento{
+        background-color: $color-entrada;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
+        height: 100px;   
     h1{
 
         font-family:$font-h1;
         color: $color-title;
     }
 }
+.carousel-item img {
+    width: 400px; 
+    height: 300px;
+    object-fit: cover;
+    }
+.text-start{
+    background-color:$color-div;
 p{
-        text-align: center;
-        font-size: $font-parrafo;
-        font-family:$estilo-p;
-    }
-#readaptacion{
+    text-align: justify;
+}
+}
+#readaptacion2{
+    @extend#readaptacion;
+    margin: 0%;
+    background:none !important;
     h2{
-        padding-top: 20px;
+        padding: 20px 0px;
     }
-    iframe{
-        padding-top: 20px;
+    p{
+        text-align: justify;
     }
 }
+.div-multi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-div;
+    div{
+        padding: 10px;
+    }
+    p{
+        text-justify:start;
+    }
+}
+
+
     // Terapias//
 
 #title__Terpias{
@@ -142,9 +183,10 @@ p{
     @extend#title__entrenamiento;
 }
 .texto-entrada{
-    @extend.texto-entrada;
-    margin-top: 20px;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
     background-color: $color-div;
 }
 .Masajes-t1{
@@ -153,24 +195,23 @@ p{
     font-family:$sup-titulos;
     font-size: 25px;
     color:$color-suptitle;
+    margin: 50px 50px;
 }
 #Masajes-t2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5px;
     ol{
         list-style-type: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img{
-            padding-right: 20px;
-            padding-bottom: 20px; 
-        }
+        padding: 0%;
+        width:100%;
     }
     h4{
+        text-align: start;
         color:$color-suptitle;
         padding-left: 10px;
     }
@@ -178,9 +219,10 @@ p{
         width: auto;
         background-color: $color-div;
         color:$color-p;
-        text-align: start;
+        text-align: justify;
     }
     h6{
+        margin: 20px 10px;
         color:$color-h6;
     }
 }
@@ -189,7 +231,6 @@ p{
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    margin: 5px;
     p{
         background-color: $color-div;
         color: $color-p;
@@ -197,10 +238,10 @@ p{
     }
 }
 .masaje-anti{
-    text-align: start;
-    padding-left: 10px;
+    text-align: center;
+    padding-bottom: 20px;
     font-family:$sup-titulos;
-    font-size: 25px;
+    font-size: 35px;
     color:$color-suptitle;
 }
 .reductivo-h3{
@@ -213,17 +254,11 @@ justify-content: center;
 align-items:center;
 
 }
-.reductivo1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 #reductivo2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    margin: 5px;
     p{
         background-color: $color-div;
         text-align: start;
