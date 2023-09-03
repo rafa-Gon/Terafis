@@ -5,33 +5,63 @@
 margin: 0;
 color:$color-p;
 }
+
+body{
+    background-color: #e9ecef;
+}
 .sticky-navbar{
     position: sticky;
     top: 0;
     z-index: 1000;
-        background-color:#cae9ff;
+    background-color:#000;
+    a{
+        &:link {
+        color:#ffc300;
+}
+&:visited {
+    color:#e8eddf;
+}
+
+&:hover{
+    background-color: #98c1d9;
+    border-radius: 20px;
+    color:#000;
+    transition: background-color 0.5s;
+}
+&:active{
+    color:#41ead4;
+}
+}
 }
 #title-sitio{
-    text-align: center;
-    color: $color-title;
+    display:flex;
     .div-vista__mobil{
-        width: 250px;
+    width: 50px;
+
     }
-    .title-sitio h1{
+    .title-sitio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    h1{
+        padding-left: 90px;
         color: $color-title;
-        padding-bottom: 60px;
         font-family: $font-h1;
+        font-size: 35px;
     }
     &{
-        background-color: $color-entrada;
+        background-color:black;
     }
 }
 .texto-entrada1{
-    background-color:$color-div;
-    font-family: $estilo-p;
-    font-size: $font-parrafo;
-    text-align:justify;
-    padding: 0%;
+    background-color:black;
+    font-family: $font-h1;
+    text-align:center;
+    h2{
+        color:$color-title;
+    }
 }
 .texto-entrada{
     @extend.texto-entrada1;
@@ -43,19 +73,31 @@ color:$color-p;
     }
 }
 .ofrecemos{
+    display: flex;
     padding: 20px 5px;
     font-family:$font-h1;
+    justify-content: start  ;
+    align-items: center;
+    height: 200px;
+    h2{
+        color: #3d5a80;
+    }
 }
 #readaptacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
-    background-color:$color-div !important;
+    background-color:$color-div;
     h3{
         padding: 20px 10px;
         font-family:$sup-titulos;
         color:$color-suptitle;
     }
+    
     p{
-        padding: 20px 0px;
+        padding: 20px 10px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
         text-align:justify;
@@ -65,21 +107,24 @@ color:$color-p;
     padding: 10px;
     font-family:$sup-titulos;
     font-size: 25px;
-    color:$color-suptitle;
     .acondicionamiento{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom:20px; 
     } 
-    h2{
-        padding:20px 0px;
+    h3{
+        color:$color-suptitle;
+        text-align: center;
     }
     p{
-        padding: 20px 0px;
+        padding: 20px 5px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
         text-align: justify;
+        color: $color-p2;
+        font-weight: 0px;
     }
 }
 #Terapeuticos{
@@ -91,9 +136,10 @@ color:$color-p;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     }
     p{
-        padding:20px 0px;
+        padding:20px 10px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
         text-align:justify; 
@@ -107,7 +153,7 @@ color:$color-p;
     color:$color-suptitle;
     }
     p{
-        padding: 20px 0px;
+        padding: 20px 5px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
         text-align:justify;  
@@ -117,13 +163,13 @@ color:$color-p;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;
-    background-color:$color-entrada;
+    background-color:black;
     margin-top: 5px;
     padding-top: 5px;
 }
         // section entrenamiento//
 #title__entrenamiento{
-        background-color: $color-entrada;
+        background-color: black;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -141,66 +187,81 @@ color:$color-p;
     object-fit: cover;
     }
 .text-start{
+    display: flex;
+    align-items: center;
     background-color:$color-div;
+    height:200px;
 p{
-    text-align: justify;
+    text-align:center;
+    font-family:$sup-titulos;
+    font-size: 20px;
+    color:$color-suptitle;
 }
 }
 #readaptacion2{
     @extend#readaptacion;
     margin: 0%;
-    background:none !important;
+    background:none;
     h2{
+        color: #3c6e71;
         padding: 20px 0px;
     }
     p{
         text-align: justify;
+        color: $color-p2;
     }
 }
-.div-multi{
+#acondicionamiento2{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-div;
-    div{
-        padding: 10px;
+    background-color:$color-div;
+    h2{
+        color:#3c6e71;
+        text-align: center;
+        padding-bottom:20px;
     }
     p{
-        text-justify:start;
+        text-align: justify;
+        padding: 15px;
     }
 }
-
-
     // Terapias//
 
 #title__Terpias{
-    background-color: $color-entrada;
+    background-color:black;
     height: 100px;
     h1{
         font-size: 35px;
     }
     @extend#title__entrenamiento;
 }
-.texto-entrada{
+.texto-entrada2{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
     background-color: $color-div;
+    p{
+        text-align: center;
+        font-size: 20px;
+        font-family:$font-h1;
+        color:$color-title;
+    }
 }
 .Masajes-t1{
     text-align: start;
     padding-left: 10px;
-    font-family:$sup-titulos;
-    font-size: 25px;
-    color:$color-suptitle;
     margin: 50px 50px;
+    h3{
+        color:#3c6e71;    font-size: 25px;
+        font-family:$sup-titulos;
+    }
 }
 #Masajes-t2{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     ol{
         list-style-type: none;
         display: flex;
@@ -210,16 +271,23 @@ p{
         padding: 0%;
         width:100%;
     }
+    .li1{
+        background-color:$color-div;
+        p{
+            color:$color-p;
+        }
+    }
+
     h4{
         text-align: start;
-        color:$color-suptitle;
+        color:#3c6e71;
         padding-left: 10px;
     }
     p{
         width: auto;
-        background-color: $color-div;
-        color:$color-p;
+        color:$color-p2;
         text-align: justify;
+        padding: 15px;
     }
     h6{
         margin: 20px 10px;
@@ -232,8 +300,9 @@ p{
     align-items: center;
     justify-content: center;
     p{
-        background-color: $color-div;
-        color: $color-p;
+        text-align: justify;
+        padding:10px;
+        color: $color-p2;
         text-align: start;
     }
 }
@@ -242,7 +311,9 @@ p{
     padding-bottom: 20px;
     font-family:$sup-titulos;
     font-size: 35px;
-    color:$color-suptitle;
+    h3{
+        color:#3c6e71;
+    }
 }
 .reductivo-h3{
 @extend.masaje-anti;
@@ -252,18 +323,15 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items:center;
-
-}
-#reductivo2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    p{
-        background-color: $color-div;
-        text-align: start;
-        color: $color-p;
+background-color:$color-div;
+    img{
+        padding-top:10px;
     }
+    p{
+        text-align: justify;
+        padding: 15px;
+        color:$color-p;
+}
 }
 .div-imagen{
     display: flex;
