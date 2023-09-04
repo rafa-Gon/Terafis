@@ -16,10 +16,10 @@ body{
     background-color:#000;
     a{
         &:link {
-        color:#ffc300;
+        color:#e8eddf;
 }
 &:visited {
-    color:#e8eddf;
+    color:#ffc300;
 }
 
 &:hover{
@@ -35,18 +35,18 @@ body{
 }
 #title-sitio{
     display:flex;
+    flex-direction: column;
     .div-vista__mobil{
-    width: 50px;
-
+    width: 60px;
     }
     .title-sitio{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: auto;
     }
     h1{
-        padding-left: 90px;
         color: $color-title;
         font-family: $font-h1;
         font-size: 35px;
@@ -54,6 +54,20 @@ body{
     &{
         background-color:black;
     }
+        @media (min-width: 1000px){
+        display:flex;
+        justify-content: center;
+        .div-vista__mobil{
+            width: 100px;
+            }
+        .title-sitio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+}
 }
 .texto-entrada1{
     background-color:black;
@@ -61,15 +75,6 @@ body{
     text-align:center;
     h2{
         color:$color-title;
-    }
-}
-.texto-entrada{
-    @extend.texto-entrada1;
-    text-align: center;
-    h2{
-        font-family:$sup-titulos;
-        font-size: 25px;
-        color:$color-suptitle ;
     }
 }
 .ofrecemos{
@@ -102,6 +107,35 @@ body{
         font-size: $font-parrafo;
         text-align:justify;
     }
+    @media (min-width:1000px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background-color:$color-div;
+        .readaptacion{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap:5px;
+            align-items: center;
+            justify-content: center;
+        }
+        h3{
+            padding: 20px 10px;
+            font-family:$sup-titulos;
+            color:$color-suptitle;
+        }
+        img{
+            width: 400px;
+        }
+        
+        p{
+            padding: 20px 10px;
+            font-family: $estilo-p;
+            font-size: $font-parrafo;
+            text-align:justify;
+        } 
+    }
 }
 #Acondicionamiento{
     padding: 10px;
@@ -126,6 +160,32 @@ body{
         color: $color-p2;
         font-weight: 0px;
     }
+    @media (min-width:1000px){
+        .acondicionamiento{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0px;
+            justify-content: center;
+            align-items: center;
+            padding:20px 40px; 
+        } 
+        h3{
+            color:$color-suptitle;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+        p{
+            padding: 20px 5px;
+            font-family: $estilo-p;
+            font-size: $font-parrafo;
+            text-align: justify;
+            color: $color-p2;
+            font-weight: 0px;
+    }
+    img{
+        width: 400px;
+    }
+}
 }
 #Terapeuticos{
     @extend#readaptacion;
@@ -144,28 +204,50 @@ body{
         font-size: $font-parrafo;
         text-align:justify; 
     }
+    @media (min-width:1000px) {
+        .terapeutico{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        justify-content: center;
+        align-items: center;
+        padding:20px 40px;
+        } 
+        img{
+            width: 400px;
+        }
+    }
 }
 #anti-estres{
     @extend#Acondicionamiento;
-    .anti-estr{
-    font-family:$sup-titulos;
-    font-size: 25px;
-    color:$color-suptitle;
-    }
     p{
         padding: 20px 5px;
         font-family: $estilo-p;
         font-size: $font-parrafo;
         text-align:justify;  
     }
+    @media (min-width:1000px) {
+        .anti-estres{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        justify-content: center;
+        align-items: center;
+        padding:20px 40px;
+
+    }
+}
 }
 #footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items:start;
     column-gap: 50px;
     background-color:black;
     margin-top: 5px;
     padding-top: 5px;
+    padding-left: 60px;
 }
         // section entrenamiento//
 #title__entrenamiento{
@@ -191,12 +273,21 @@ body{
     align-items: center;
     background-color:$color-div;
     height:200px;
+
 p{
     text-align:center;
     font-family:$sup-titulos;
     font-size: 20px;
     color:$color-suptitle;
 }
+@media (min-width:1000px) {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 35px
+        };
+    } 
 }
 #readaptacion2{
     @extend#readaptacion;
@@ -209,6 +300,14 @@ p{
     p{
         text-align: justify;
         color: $color-p2;
+    }
+    @media (min-width:1000px) {
+        .readaptacion2{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap:5px;
+            padding: 10px 20px;
+        }
     }
 }
 #acondicionamiento2{
@@ -224,7 +323,20 @@ p{
         text-align: justify;
         padding: 15px;
     }
-}
+    @media (min-width:1000px) {
+        .acondicionamiento2{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap:5px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 400px;
+        }
+    }
+    }
     // Terapias//
 
 #title__Terpias{
@@ -247,42 +359,78 @@ p{
         font-family:$font-h1;
         color:$color-title;
     }
+    @media (min-width:1000px) {
+        height: 200px;
+        p{
+            font-size: 35px;
+            padding-top: 20px;
+        }
+    }
 }
 .Masajes-t1{
     text-align: start;
     padding-left: 10px;
     margin: 50px 50px;
     h3{
-        color:#3c6e71;    font-size: 25px;
+        color:#3c6e71;    
+        font-size: 25px;
         font-family:$sup-titulos;
+    }
+    @media (min-width:1000px) {
+        text-align: center;
     }
 }
 #Masajes-t2{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    ol{
-        list-style-type: none;
+    p{
+        color:$color-p2;
+        text-align: justify;
+        padding: 15px;
+        width: auto;
+    }
+    @media (min-width:1000px) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 400px;
+        }
+    }
+}
+    #ol{
+        h4{
+            text-align: start;
+            color:#3c6e71;
+            padding-left: 10px;
+        }
+    }
+    .ol{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0%;
-        width:100%;
-    }
-    .li1{
-        background-color:$color-div;
-        p{
-            color:$color-p;
-        }
-    }
 
-    h4{
-        text-align: start;
-        color:#3c6e71;
-        padding-left: 10px;
-    }
+    .li1{
+            display: flex;
+            flex-direction: column;
+            background-color:$color-div;
+            width: 100%;
+            height: 500px;
+        p{
+                color:$color-p;
+                width: auto;
+                text-align: justify;
+                padding: 15px;
+            }
+        h6{
+                margin: 20px 10px;
+                color:$color-h6;
+            }
+        }
     p{
         width: auto;
         color:$color-p2;
@@ -293,7 +441,29 @@ p{
         margin: 20px 10px;
         color:$color-h6;
     }
-}
+    @media (min-width:1000px) {
+        .li1{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            img{
+                width: 100%;
+            }
+        }
+        .li2{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            img{
+                width: 100%;
+            }
+        }
+    } 
+    }
 #masajes_anti{
     display: flex;
     flex-direction:column;
@@ -304,6 +474,16 @@ p{
         padding:10px;
         color: $color-p2;
         text-align: start;
+    }
+    @media (min-width:1000px) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        img{
+            width: 400px;
+        }
     }
 }
 .masaje-anti{
@@ -339,8 +519,60 @@ background-color:$color-div;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    img{
+        width: 350px;
+    }
+    @media (min-width:800px){
+        img{
+            width: 500px;
+        }
+    }
+    @media (min-width:1000px){
+        img{
+            width: 500px;
+        }  
+    }
 }
+.div__especialista{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    background-color:$color-div;
+    height: 200px;
+    h1{
+        font-family:$sup-titulos;
+        color:$color-title;
+    }
 
+}
+.name{
+    padding: 20px;
+    h2{
+        font-family:$font-h1;
+        color:#3c6e71;
+    }
+    p{
+        font-size:$font-parrafo;
+        font-family:$sup-titulos;
+        color:$color-p2;
+    }
+}
+.otros{
+    padding: 20px;
+    background-color:$color-div;
+    h3{
+        color:$color-h6;
+    }
+}
+.Ubicacion{
+    h2{
+        padding: 20px;
+        color:#3c6e71;
+    }
+    img{
+        width: 200px;
+    }
+}
 
 
 
