@@ -4,48 +4,39 @@
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
-a:link {
-  color: #e8eddf;
-}
-a:visited {
-  color: #49a078;
-}
-a:hover {
-  background-color: #98c1d9;
-  border-radius: 20px;
-  color: #000;
-  transition: background-color 0.1s;
-}
-a:active {
-  color: #41ead4;
-}
-
 body {
   background-color: #e9ecef;
 }
 
 .sticky-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: #000;
+  height: 50px;
 }
 .sticky-navbar a:link {
+  transition: background-color 0.1s;
+  border-radius: 20px;
   color: #e8eddf;
 }
 .sticky-navbar a:visited {
+  transition: background-color 0.1s;
+  border-radius: 20px;
   color: #ffc300;
 }
 .sticky-navbar a:hover {
   background-color: #98c1d9;
   border-radius: 20px;
   color: #000;
-  transition: background-color 0.1s;
+  transition: background-color 0.5s;
 }
 .sticky-navbar a:active {
+  transition: background-color 0.1s;
+  border-radius: 20px;
   color: #41ead4;
 }
 
@@ -54,11 +45,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  height: 300px;
   background-image: url(../imagenes/video2.gif);
   background-color: rgb(30, 30, 30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 #title-sitio .div-vista__mobil {
   display: flex;
@@ -133,7 +125,8 @@ body {
   padding-top: 40px;
 }
 #readaptacion h3 {
-  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
   font-family: "Roboto Slab", serif;
   color: #ff9f1c;
 }
@@ -142,6 +135,26 @@ body {
   font-family: arial;
   font-size: 17px;
   text-align: justify;
+}
+#readaptacion a {
+  text-decoration: none;
+}
+#readaptacion a:link {
+  color: #e8eddf;
+}
+#readaptacion a:visited {
+  color: #e5383b;
+}
+#readaptacion a:hover {
+  background-color: #98c1d9;
+  border-radius: 20px;
+  color: #000;
+  transition: background-color 0.1s;
+}
+#readaptacion a:active {
+  transition: background-color 0.1s;
+  border-radius: 20px;
+  color: #41ead4;
 }
 @media (min-width: 1000px) {
   #readaptacion {
@@ -173,24 +186,6 @@ body {
     font-family: arial;
     font-size: 17px;
     text-align: justify;
-  }
-  #readaptacion a {
-    text-decoration: none;
-  }
-  #readaptacion a:link {
-    color: #e8eddf;
-  }
-  #readaptacion a:visited {
-    color: #ffc300;
-  }
-  #readaptacion a:hover {
-    background-color: #98c1d9;
-    border-radius: 20px;
-    color: #000;
-    transition: background-color 0.1s;
-  }
-  #readaptacion a:active {
-    color: #41ead4;
   }
 }
 
@@ -224,6 +219,26 @@ body {
 #Acondicionamiento ul li {
   font-size: 20px;
   color: #4a4e69;
+}
+#Acondicionamiento a {
+  text-decoration: none;
+}
+#Acondicionamiento a:link {
+  color: #e8eddf;
+}
+#Acondicionamiento a:visited {
+  color: #e5383b;
+}
+#Acondicionamiento a:hover {
+  background-color: #98c1d9;
+  border-radius: 20px;
+  color: #000;
+  transition: background-color 0.1s;
+}
+#Acondicionamiento a:active {
+  transition: background-color 0.1s;
+  border-radius: 20px;
+  color: #41ead4;
 }
 @media (min-width: 1000px) {
   #Acondicionamiento {
@@ -270,16 +285,38 @@ body {
   align-items: center;
   padding: 10px;
   background-color: #003566;
-  height: 650px;
+  height: 500px;
 }
 #Terapeuticos h3 {
+  display: flex;
+  justify-content: center;
   color: #ff9f1c;
 }
 #Terapeuticos p {
-  padding: 20px 10px;
+  padding: 20px 15px;
   font-family: arial;
   font-size: 17px;
   text-align: justify;
+}
+#Terapeuticos a {
+  text-decoration: none;
+}
+#Terapeuticos a:link {
+  color: #e8eddf;
+}
+#Terapeuticos a:visited {
+  color: #e5383b;
+}
+#Terapeuticos a:hover {
+  background-color: #98c1d9;
+  border-radius: 20px;
+  color: #000;
+  transition: background-color 0.1s;
+}
+#Terapeuticos a:active {
+  transition: background-color 0.1s;
+  border-radius: 20px;
+  color: #41ead4;
 }
 @media (min-width: 1000px) {
   #Terapeuticos .terapeutico {
@@ -304,21 +341,44 @@ body {
   align-items: center;
 }
 #anti-estres h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
   color: #ff9f1c;
 }
 #anti-estres p {
-  padding: 20px 5px;
+  padding: 20px 10px;
   font-family: arial;
   color: #212529;
   font-size: 17px;
   text-align: justify;
+}
+#anti-estres a {
+  text-decoration: none;
+}
+#anti-estres a:link {
+  color: #e8eddf;
+}
+#anti-estres a:visited {
+  color: #e5383b;
+}
+#anti-estres a:hover {
+  background-color: #98c1d9;
+  border-radius: 20px;
+  color: #000;
+  transition: background-color 0.1s;
+}
+#anti-estres a:active {
+  transition: background-color 0.1s;
+  border-radius: 20px;
+  color: #41ead4;
 }
 @media (min-width: 1000px) {
   #anti-estres img {
     width: 100%;
   }
   #anti-estres p {
-    width: 500px;
+    width: 510px;
   }
   #anti-estres .anti-estres {
     display: grid;
@@ -343,6 +403,7 @@ footer #footer {
   align-items: center;
   padding: 40px;
   height: 120px;
+  row-gap: 20px;
 }
 footer .ft {
   display: flex;
@@ -353,13 +414,21 @@ footer .ft {
 footer .ft h6 {
   color: #70798c;
 }
+footer .ft .h {
+  width: 30%;
+  height: 2px;
+  border: 0 none;
+  margin: auto;
+  background-color: #e9ecef;
+}
 @media (min-width: 1000px) {
   footer #footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    column-gap: 60px;
+    padding: 60px;
     height: 120px;
   }
   footer .ft {
@@ -380,11 +449,26 @@ footer .ft h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 150px;
+  padding-bottom: 20px;
+}
+#title__entrenamiento img, #title__Terpias img {
+  width: 60px;
 }
 #title__entrenamiento h1, #title__Terpias h1 {
   font-family: "Merriweather", serif;
   color: #ffc300;
+}
+@media (min-width: 1000px) {
+  #title__entrenamiento, #title__Terpias {
+    height: 300px;
+  }
+  #title__entrenamiento img, #title__Terpias img {
+    width: 100px;
+  }
+  #title__entrenamiento img:hover, #title__Terpias img:hover {
+    width: 140px;
+  }
 }
 
 .carousel-item img {
@@ -404,6 +488,7 @@ footer .ft h6 {
   font-family: "Roboto Slab", serif;
   font-size: 20px;
   color: #ff9f1c;
+  padding: 10px;
 }
 @media (min-width: 1000px) {
   .text-start {
@@ -421,10 +506,12 @@ footer .ft h6 {
   flex-direction: column;
   margin: 0%;
   background: none;
-  height: 650px;
+  height: 550px;
   padding: 10px;
 }
 #readaptacion2 h2 {
+  display: flex;
+  justify-content: center;
   color: #3c6e71;
   padding: 20px 0px;
 }
@@ -455,6 +542,9 @@ footer .ft h6 {
   flex-direction: column;
   background-color: #003566;
   padding-top: 10px;
+}
+#acondicionamiento2 img {
+  padding-top: 40px;
 }
 #acondicionamiento2 h2 {
   color: #3c6e71;
@@ -487,17 +577,31 @@ footer .ft h6 {
 
 #title__Terpias {
   background-color: black;
-  height: 100px;
+  height: 200px;
+}
+#title__Terpias img {
+  width: 60px;
 }
 #title__Terpias h1 {
   font-size: 35px;
+}
+@media (min-width: 1000px) {
+  #title__Terpias {
+    height: 300px;
+  }
+  #title__Terpias img {
+    width: 100px;
+  }
+  #title__Terpias img:hover {
+    width: 140px;
+  }
 }
 
 .texto-entrada2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 120px;
   background-color: #003566;
 }
 .texto-entrada2 p {
@@ -505,6 +609,7 @@ footer .ft h6 {
   font-size: 20px;
   font-family: "Merriweather", serif;
   color: #ffc300;
+  padding: 5px 5px;
 }
 @media (min-width: 1000px) {
   .texto-entrada2 {
@@ -516,26 +621,17 @@ footer .ft h6 {
   }
 }
 
-.Masajes-t1 {
-  text-align: start;
-  padding-left: 10px;
-  margin: 50px 50px;
-}
-.Masajes-t1 h3 {
-  color: #3c6e71;
-  font-size: 25px;
-  font-family: "Roboto Slab", serif;
-}
-@media (min-width: 1000px) {
-  .Masajes-t1 {
-    text-align: center;
-  }
-}
-
 #Masajes-t2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#Masajes-t2 h3 {
+  color: #ff9f1c;
+  font-size: 25px;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-left: 10px;
 }
 #Masajes-t2 p {
   color: #212529;
@@ -550,16 +646,12 @@ footer .ft h6 {
     column-gap: 5px;
     justify-content: center;
     align-items: center;
+    height: 600px;
+    padding: 20px;
   }
   #Masajes-t2 img {
-    width: 400px;
+    width: 80%;
   }
-}
-
-#ol h4 {
-  text-align: start;
-  color: #3c6e71;
-  padding-left: 10px;
 }
 
 .ol {
@@ -582,8 +674,14 @@ footer .ft h6 {
   padding: 15px;
 }
 .ol .li1 h6 {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  justify-content: center;
   margin: 20px 10px;
   color: #ef476f;
+}
+.ol .li1 img {
+  padding-top: 40px;
 }
 .ol p {
   width: auto;
@@ -592,6 +690,9 @@ footer .ft h6 {
   padding: 15px;
 }
 .ol h6 {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  justify-content: center;
   margin: 20px 10px;
   color: #ef476f;
 }
@@ -603,8 +704,16 @@ footer .ft h6 {
     align-items: center;
     padding: 15px;
   }
+  .ol .li1 h6 {
+    display: flex;
+    justify-content: start;
+  }
   .ol .li1 img {
-    width: 100%;
+    width: 80%;
+    height: auto;
+  }
+  .ol .li1 p {
+    width: 500px;
   }
   .ol .li2 {
     display: grid;
@@ -613,8 +722,16 @@ footer .ft h6 {
     align-items: center;
     padding: 15px;
   }
+  .ol .li2 h6 {
+    display: flex;
+    justify-content: start;
+  }
   .ol .li2 img {
-    width: 100%;
+    height: 50%;
+    width: 70%;
+  }
+  .ol .li2 p {
+    width: 500px;
   }
 }
 
@@ -623,12 +740,18 @@ footer .ft h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 40px;
+}
+#masajes_anti h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  color: #ff9f1c;
 }
 #masajes_anti p {
-  text-align: justify;
   padding: 10px;
+  text-align: justify;
   color: #212529;
-  text-align: start;
 }
 @media (min-width: 1000px) {
   #masajes_anti {
@@ -639,7 +762,7 @@ footer .ft h6 {
     padding: 15px;
   }
   #masajes_anti img {
-    width: 400px;
+    width: 80%;
   }
 }
 
@@ -650,7 +773,8 @@ footer .ft h6 {
   font-size: 35px;
 }
 .masaje-anti h3, .reductivo-h3 h3 {
-  color: #3c6e71;
+  padding-top: 20px;
+  color: #ff9f1c;
 }
 
 #reductivo1 {
@@ -692,14 +816,34 @@ footer .ft h6 {
 
 .div__especialista {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 20px;
-  background-color: #003566;
+  background-color: black;
   height: 200px;
+}
+.div__especialista img {
+  width: 60px;
 }
 .div__especialista h1 {
   font-family: "Roboto Slab", serif;
   color: #ffc300;
+}
+@media (min-width: 1000px) {
+  .div__especialista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+  }
+  .div__especialista img {
+    width: 100px;
+  }
+  .div__especialista img:hover {
+    width: 140px;
+  }
 }
 
 .name {
@@ -714,6 +858,23 @@ footer .ft h6 {
   font-family: "Roboto Slab", serif;
   color: #212529;
 }
+@media (min-width: 1000px) {
+  .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+  }
+  .name .name2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .name p {
+    width: 800px;
+  }
+}
 
 .otros {
   padding: 20px;
@@ -721,6 +882,18 @@ footer .ft h6 {
 }
 .otros h3 {
   color: #ef476f;
+}
+@media (min-width: 1000px) {
+  .otros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    padding-left: 100px;
+  }
+  .otros li {
+    padding: 10px;
+  }
 }
 
 .Ubicacion h2 {
